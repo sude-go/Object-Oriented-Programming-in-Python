@@ -1,7 +1,5 @@
 """
-Assume that people is a list of names, each represented as a string using the
-format 'firstName lastName'. Print out the names one per line, yet alpha-
-betized by last name.
+alphabetized by last name.
 """
 
 people = ['John Smith', 'Jackie Jackson', 'Chris Jones', 'Amanda Cullen', 'Jeremy Goodwin']
