@@ -1,0 +1,14 @@
+# greatest common denominator
+
+
+def gcd(u, v):
+    while v:
+        u, v = v, u % v
+    return abs(u)
+
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+result = gcd(num1, num2)
+print(f"The greatest common divisor of {num1} and {num2} is: {result}")
