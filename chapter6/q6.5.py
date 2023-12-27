@@ -4,12 +4,10 @@ class Date:
                   'September', 'October', 'November', 'December')
 
     def __init__(self):
-        # By default: January 1, 2000
         self._month = 1
         self._day = 1
         self._year = 2000
 
-    # Define a getDay function that returns the day as an integer.
     def get_day(self):
         return self._day
 
