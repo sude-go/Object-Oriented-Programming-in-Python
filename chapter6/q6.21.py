@@ -38,13 +38,6 @@ class Ball:
         self.posY += self.velY
         self.velX -= gravity_x
         self.velY -= gravity_y
-
-        if self.posX >= 400 or self.posY >= 400:
-            self.velX = -self.velX
-            self.velY = -self.velY
-        if self.posX <= 0 or self.posY <= 0:
-            self.velX = -self.velX
-            self.velY = -self.velY
         self.shape.moveTo(self.posX, self.posY)
 
 

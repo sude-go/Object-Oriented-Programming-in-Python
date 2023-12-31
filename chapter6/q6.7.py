@@ -10,7 +10,9 @@ class List:
 
 test_list = List([1, 2, 3, 4, 5])
 value_to_check = int(input("Enter the value to check: "))
-if value_to_check in test_list:
+present = test_list.__contains__(value_to_check)
+
+if present:
     print(f"The value {value_to_check} is present in the list.")
 else:
     print(f"The value {value_to_check} is not present in the list.")

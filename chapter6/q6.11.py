@@ -1,7 +1,14 @@
+from math import gcd
+
+
 class Fraction:
     def __init__(self, divided, sub):
         self.divided = divided
         self.sub = sub
+
+        d = gcd(self.divided, self.sub)
+        self.divided = self.divided // d
+        self.sub = self.sub // d
 
     def __neg__(self):
         return Fraction(-self.divided, self.sub)
@@ -13,7 +20,7 @@ class Fraction:
         return f"{self.divided}/{self.sub}"
 
 
-fraction = Fraction(3, 4)
+fraction = Fraction(7, 21)
 negated_fraction = -fraction
 inverted_fraction = fraction.invert()
 
